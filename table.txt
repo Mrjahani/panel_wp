@@ -1,0 +1,18 @@
+user
+	id
+	name
+	family
+	permission
+	grade
+	school
+	craeted_at
+	mobile
+	teacher
+	email
+
+
+
+select * from users where (permission = 'teacher' and name='arash')
+
+
+select * from classes where user_id in (select id from users where permission = 'teacher' and name='arash')
